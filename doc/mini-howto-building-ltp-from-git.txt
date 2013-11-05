@@ -60,3 +60,7 @@ make -j$MAKE_JOBS 2>&1 | tee ../$BUILD_LOG_FILE
 # Install LTP (requires superuser privileges)
 
 sudo make install 2>&1 | tee ../$INSTALL_LOG_FILE
+
+#RUN all tests
+
+/opt/ltp/runltp
